@@ -10,21 +10,31 @@
 
 <body>
     <div class="container">
-        <h1>World Clock</h1>
-        <div class="clocks">
-            <select name="cities" id="cities">
-                <option value="Choose a city">Choose a city</option>
-                <option value="Ethiopia/Addis Ababa">Addis Ababa</option>
-                <option value="Australia/sydney">Sydney</option>
-            </select>
+        <h1>World Clock ⏰</h1>
 
-            <div class="city">
-                <h2 id="city1">Addis Ababa</h2>
-                <h6 class="date">October 18,2024</h6>
-                <h3 id="time1">00:00:00</h3>
+        <select>
+            <option value="">Select a city..</option>
+            <option value="">Addis Ababa</option>
+            <option value="">Paris</option>
+            <option value="">Sydney</option>
+        </select>
+
+        <div class="city">
+            <div>
+                <h2>Addis Ababa</h2>
+                <div class="date">August 15th 2022</div>
             </div>
+            <div class="time">1:48:15 <small> AM </small></div>
         </div>
-        <footer>This project is Coded by Reem and open sourced at <a href="#" target="_blank">GitHub</a></footer>
+        <div class="city">
+            <div>
+                <h2>Paris 🇫🇷</h2>
+                <div class="date">August 15th 2022</div>
+            </div>
+            <div class="time">1:48:15 <small> AM </small></div>
+        </div>
+    </div>
+    <footer>This project is Coded by Reem and open sourced at <a href="#" target="_blank">GitHub</a></footer>
     </div>
     <script src="/src/clock.js"></script>
 </body>
