@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Clock - Reem Abdella</title>
     <link rel="stylesheet" href="/src/clock.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.46/moment-timezone-with-data-1970-2030.min.js"></script>
+
 </head>
 
 <body>
@@ -19,19 +23,20 @@
             <option value="">Sydney</option>
         </select>
 
-        <div class="city">
+        <div class="city" id="Addis">
             <div>
                 <h2>Addis Ababa</h2>
-                <div class="date">August 15th 2022</div>
+                <div class="date"></div>
             </div>
-            <div class="time">1:48:15 <small> AM </small></div>
+            <div class="time"></div>
         </div>
-        <div class="city">
+
+        <div class="city" id="paris">
             <div>
                 <h2>Paris 🇫🇷</h2>
-                <div class="date">August 15th 2022</div>
+                <div class="date" id="parisdate"></div>
             </div>
-            <div class="time">1:48:15 <small> AM </small></div>
+            <div class="time" id="parisdate"></div>
         </div>
     </div>
     <footer>This project is Coded by Reem and open sourced at <a href="#" target="_blank">GitHub</a></footer>
