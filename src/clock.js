@@ -1,23 +1,23 @@
 function updatetime() {
   let AddisElement = document.querySelector('#Addis');
-  let Addisdate = document.querySelector('.date');
-  let Addistime = document.querySelector('.time');
+  let AddisdateElement = AddisElement.querySelector('.date');
+  let AddistimeElement = AddisElement.querySelector('.time');
 
-  let date1 = moment.tz('Africa/Addis_Ababa').format('dddd, MMMM Do YYYY');
-  Addisdate.innerHTML = date1;
+  let AddisTime = moment.tz('Africa/Addis_Ababa').format('h:m:S');
+  let Addisdate = moment.tz('Africa/Addis_Ababa').format('dddd, MMMM Do YYYY');
 
-  let time1 = moment.tz('Africa/Addis_Ababa').format('h:m:S');
-  Addistime.innerHTML = `${time1}<small>AM</small>`;
-  /*
+  AddistimeElement.innerHTML = `${AddisTime}<small>AM</small>`;
+  AddisdateElement.innerHTML = Addisdate;
+
   let ParisElement = document.querySelector('#paris');
+  let ParisdateElement = ParisElement.querySelector('.date');
+  let ParistimeElement = ParisElement.querySelector('.time');
 
-  let parisdate = ParisElement.querySelector('#parisdate');
-  let paristime = ParisElement.querySelector('#paristime');
+  let ParisTime = moment.tz('Europe/Paris').format('h:m:S');
+  let Parisdate = moment.tz('Europe/Paris').format('dddd, MMMM Do YYYY');
 
-  parisdate.innerHTML = moment.tz('Europe/Paris').format('dddd, MMMM Do YYYY');
-
-  let time2 = moment.tz('Europe/Paris').format('h:m:S');
-  paristime.innerHTML = `${time2}<small>AM</small>`;
-  */
+  ParistimeElement.innerHTML = `${ParisTime}<small>AM</small>`;
+  ParisdateElement.innerHTML = Parisdate;
 }
+updatetime();
 setInterval(updatetime, 1000);
